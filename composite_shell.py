@@ -69,7 +69,7 @@ print("A: ", A, "[GPa * mm]")
 #so stress_vector = n* A * strain_vector
 #and strain vector = 1/n * stress_vector * A**-1
 
-#A = A*1000 #(convert from GPA * mm to MPa * mm)
+A = A*1000 #(convert from GPA * mm to MPa * mm)
 
 strain_vector = np.linalg.inv(A) @ stress_vector
 
