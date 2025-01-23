@@ -1,3 +1,5 @@
+#Mark Edwardson, 2025-01-22
+
 import numpy as np
 
 #analyzing the strains on a compressed gas tank, made from carbon/epoxy at [30, -30] layup
@@ -65,7 +67,6 @@ A = 2*(Q_bar_plus*ply_t + Q_bar_minus*ply_t)
 print("A: ", A, "[GPa * mm]")
 
 #Apparently B is zero, so we don't need it. And we don't need D either.
-
 #so stress_vector = n* A * strain_vector
 #and strain vector = 1/n * stress_vector * A**-1
 
@@ -73,4 +74,5 @@ A = A*1000 #(convert from GPA * mm to MPa * mm)
 
 strain_vector = np.linalg.inv(A) @ stress_vector
 
+#Print final relationship as a function of n
 print("Strain vector: 1/n * ", strain_vector)
