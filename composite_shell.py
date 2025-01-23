@@ -14,7 +14,7 @@ ply_t = 0.127 #mm
 E_1 = 138 #GPa
 E_2 = 8.96 #GPa
 G_12 = 7.1  #GPa
-v_12 = 0.3 #GPa
+v_12 = 0.3 #Unitless
 
 theta = 30 #degrees - angle of the ply wrt the axis of the tank (+/-)
 
